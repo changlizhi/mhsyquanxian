@@ -6,3 +6,7 @@ type Jueses struct {
 	Mingcheng   string
 	Miaoshu     string
 }
+
+func (Jueses) TableName() string {
+	return "Jueses"
+}

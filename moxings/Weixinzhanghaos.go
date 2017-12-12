@@ -6,3 +6,7 @@ type Weixinzhanghaos struct {
 	Weixinhao    string
 	Yonghubianma string
 }
+
+func (Weixinzhanghaos) TableName() string {
+	return "Weixinzhanghaos"
+}

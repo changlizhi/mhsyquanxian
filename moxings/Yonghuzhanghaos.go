@@ -7,3 +7,7 @@ type Yonghuzhanghaos struct {
 	Youxiang   string
 	Yonghubianma string
 }
+
+func (Yonghuzhanghaos) TableName() string {
+	return "Yonghuzhanghaos"
+}

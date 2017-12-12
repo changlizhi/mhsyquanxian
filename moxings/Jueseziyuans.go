@@ -5,3 +5,7 @@ type Jueseziyuans struct {
 	Juesebianma  string
 	Ziyuanbianma string
 }
+
+func (Jueseziyuans) TableName() string {
+	return "Jueseziyuans"
+}

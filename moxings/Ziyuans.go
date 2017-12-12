@@ -7,3 +7,7 @@ type Ziyuans struct {
 	Ziyuanbianma string
 	Ziyuanshuzi  int64
 }
+
+func (Ziyuans) TableName() string {
+	return "Ziyuans"
+}
