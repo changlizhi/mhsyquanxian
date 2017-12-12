@@ -2,8 +2,8 @@ package moxings
 
 type Jueseziyuans struct {
 	Id           int64
-	Juesebianma  string
-	Ziyuanbianma string
+	Juesebianma  string `gorm:"not null"`
+	Ziyuanbianma string `gorm:"not null"`
 }
 
 func (Jueseziyuans) TableName() string {
