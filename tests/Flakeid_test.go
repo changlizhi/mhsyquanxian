@@ -1,9 +1,9 @@
 package tests
 
 import (
-	"testing"
-	"mhsyquanxian/quanju"
 	"log"
+	"mhsyquanxian/quanju"
+	"testing"
 )
 
 func TestFlakeid(t *testing.T) {

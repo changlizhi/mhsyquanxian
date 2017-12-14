@@ -1,8 +1,8 @@
 package quanju
 
 import (
-	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/jinzhu/gorm"
 	"log"
 )
 

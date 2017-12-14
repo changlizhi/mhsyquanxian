@@ -1,9 +1,10 @@
 package quanju
 
 import (
-	"mhsyquanxian/gongjus"
 	"log"
+	"mhsyquanxian/gongjus"
 )
+
 var flakeid *gongjus.IdWorker
 
 func Flakeid() *gongjus.IdWorker {
