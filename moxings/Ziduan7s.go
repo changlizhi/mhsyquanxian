@@ -6,7 +6,7 @@ type Ziduan7s struct {
 	Bianma     string `gorm:"not null"`
 	Mingcheng  string `gorm:"not null"`
 	Leixing    string `gorm:"not null"`
-	Changdu    int `gorm:"not null"`
+	Changdu    int    `gorm:"not null"`
 }
 
 func (Ziduan7s) TableName() string {
