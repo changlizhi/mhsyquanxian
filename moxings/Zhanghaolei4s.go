@@ -2,9 +2,9 @@ package moxings
 
 type Zhanghaolei4s struct {
 	Id         int64
-	Biaobianma string
-	Bianma     string
-	Mingcheng  string
+	Biaobianma string `gorm:"not null"`
+	Bianma     string `gorm:"not null"`
+	Mingcheng  string `gorm:"not null"`
 }
 
 func (Zhanghaolei4s) TableName() string {

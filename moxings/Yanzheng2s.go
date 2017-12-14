@@ -2,10 +2,10 @@ package moxings
 
 type Yanzheng2s struct {
 	Id         int64
-	Biaobianma string
-	Bianma     string
-	Mingcheng  string
-	Celue      string
+	Biaobianma string `gorm:"not null"`
+	Bianma     string `gorm:"not null"`
+	Mingcheng  string `gorm:"not null"`
+	Celue      string `gorm:"not null"`
 }
 
 func (Yanzheng2s) TableName() string {
