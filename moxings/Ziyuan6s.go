@@ -1,6 +1,6 @@
 package moxings
 
-type Ziyuans struct {
+type Ziyuan6s struct {
 	Id           int64
 	Mingcheng    string `gorm:"not null"`
 	Lujing       string `gorm:"not null"`
@@ -9,6 +9,6 @@ type Ziyuans struct {
 	Miaoshu      string `gorm:"not null;DEFAULT:0"`
 }
 
-func (Ziyuans) TableName() string {
-	return "Ziyuans"
+func (Ziyuan6s) TableName() string {
+	return "Ziyuan6s"
 }
