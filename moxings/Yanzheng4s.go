@@ -1,6 +1,6 @@
 package moxings
 
-type Yanzheng2s struct {
+type Yanzheng4s struct {
 	Id          int64
 	Biaobianma  string `gorm:"not null"`
 	Bianma      string `gorm:"not null"`
@@ -9,6 +9,6 @@ type Yanzheng2s struct {
 	Celuefangfa string `gorm:"not null"`
 }
 
-func (Yanzheng2s) TableName() string {
-	return "Yanzheng2s"
+func (Yanzheng4s) TableName() string {
+	return "Yanzheng4s"
 }
