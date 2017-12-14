@@ -6,7 +6,9 @@ import (
 )
 
 func Chuangjianbiao() {
-	quanju.Db.Set("gorm:table_options", "ENGINE=InnoDB").CreateTable(
+	dbs := quanju.Db().Set("gorm:table_options", "ENGINE=InnoDB")
+	defer dbs.Close()
+	dbs.CreateTable(
 		&moxings.Gl1he4s{},
 		&moxings.Gl1he5s{},
 		&moxings.Gl2he4s{},
