@@ -7,7 +7,7 @@ type Ziyuan6s struct {
 	Biaoshuzi  int64  `gorm:"not null"`
 	Mingcheng  string `gorm:"not null"`
 	Lujing     string `gorm:"not null"`
-	Fangfa     string `gorm:"not null"`//提交、删除
+	Fangfa     string `gorm:"not null"` //提交、删除
 	Miaoshu    string `gorm:"not null;DEFAULT:0"`
 }
 

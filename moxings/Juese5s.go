@@ -2,7 +2,8 @@ package moxings
 
 type Juese5s struct {
 	Id          int64
-	Juesebianma string `gorm:"not null"`
+	Biaobianma string `gorm:"not null"`
+	Bianma string `gorm:"not null"`
 	Mingcheng   string `gorm:"not null"`
 	Miaoshu     string `gorm:"not null;DEFAULT:0"`
 }
