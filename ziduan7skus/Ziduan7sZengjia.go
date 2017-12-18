@@ -9,7 +9,7 @@ import (
 func ZengjiaZiduan7s(mx *moxings.Ziduan7s) bool {
 	cr := quanju.Db().Create(mx)
 	if cr.Error != nil {
-		log.Println("cr.Error---", cr.Error)
+		log.Println("ZengjiaZiduan7s---cr.Error---", cr.Error)
 		return false
 	}
 	return true
