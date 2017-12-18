@@ -7,5 +7,5 @@ import (
 )
 
 func TestCharuZiduan7s(t *testing.T) {
-	ziduan7skus.CharuZiduan7s(ceshiyong.Ziduan7scharu())
+	ziduan7skus.ZengjiaZiduan7s(ceshiyong.Ziduan7scharu())
 }

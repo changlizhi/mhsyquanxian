@@ -6,7 +6,7 @@ import (
 	"mhsyquanxian/quanju"
 )
 
-func CharuZiduan7s(mx *moxings.Ziduan7s) bool {
+func ZengjiaZiduan7s(mx *moxings.Ziduan7s) bool {
 	cr := quanju.Db().Create(mx)
 	if cr.Error != nil {
 		log.Println("cr.Error---", cr.Error)
