@@ -13,3 +13,10 @@ func Ziduan7scharu() *moxings.Ziduan7s {
 	}
 	return ret
 }
+
+func Ziduan7schaxun() moxings.Ziduan7s {
+	ret := moxings.Ziduan7s{
+		Biaobianma: "zd1000",
+	}
+	return ret
+}
