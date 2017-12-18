@@ -2,7 +2,7 @@ package ceshiyong
 
 import "mhsyquanxian/moxings"
 
-func Ziduan7sshiti() *moxings.Ziduan7s {
+func Ziduan7scharu() *moxings.Ziduan7s {
 	ret := &moxings.Ziduan7s{
 		Id:         1000,
 		Biaobianma: "zd1000",
