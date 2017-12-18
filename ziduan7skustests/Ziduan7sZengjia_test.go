@@ -1,4 +1,4 @@
-package tests
+package ziduan7skustests
 
 import (
 	"mhsyquanxian/ceshiyong"
