@@ -1,4 +1,4 @@
-package tests
+package quanjuceshis
 
 import (
 	"log"
