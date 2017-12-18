@@ -27,4 +27,3 @@ func Chuangjianbiao() {
 		&moxings.Ziyuan6s{},
 	)
 }
-
