@@ -10,7 +10,7 @@ var db *gorm.DB
 
 func Db() *gorm.DB {
 	if db == nil {
-		log.Println(111)
+		log.Println("db == nil,open it!")
 		db, err := gorm.Open("mysql", "root:root@tcp(127.0.0.1:3306)/mhsyquanxian?charset=utf8&parseTime=True&loc=Local")
 		if err != nil {
 			log.Println("kaiqi shujuku shibai ---", err)
