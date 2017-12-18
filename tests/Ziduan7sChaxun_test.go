@@ -1,10 +1,10 @@
 package tests
 
 import (
-	"testing"
-	"mhsyquanxian/ziduan7skus"
-	"mhsyquanxian/ceshiyong"
 	"log"
+	"mhsyquanxian/ceshiyong"
+	"mhsyquanxian/ziduan7skus"
+	"testing"
 )
 
 func TestChaxunZiduan7s(t *testing.T) {
