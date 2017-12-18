@@ -1,4 +1,4 @@
-package tests
+package qidongqianceshis
 
 import (
 	"mhsyquanxian/qidongqian"
