@@ -24,7 +24,7 @@ func Ziduan7schaxun() moxings.Ziduan7s {
 func Ziduan7sxiugai() moxings.Ziduan7s {
 	ret := moxings.Ziduan7s{
 		Biaobianma: "zd1000",
-		Mingcheng: "修改名称",
+		Mingcheng:  "修改名称",
 	}
 	return ret
 }
