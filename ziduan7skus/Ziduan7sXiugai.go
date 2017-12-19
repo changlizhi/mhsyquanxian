@@ -1,9 +1,9 @@
 package ziduan7skus
 
 import (
-	"mhsyquanxian/quanju"
-	"mhsyquanxian/moxings"
 	"log"
+	"mhsyquanxian/moxings"
+	"mhsyquanxian/quanju"
 )
 
 func XiugaiZiduan7s(mx moxings.Ziduan7s) *moxings.Ziduan7s {
@@ -11,10 +11,10 @@ func XiugaiZiduan7s(mx moxings.Ziduan7s) *moxings.Ziduan7s {
 		log.Println("ShanchuZiduan7s---表编码不能为空")
 		return nil
 	}
-	mx.Id = 0// 不允许带id传过来，但如果传过来了也没关系，只会根据表编码修改
+	mx.Id = 0 // 不允许带id传过来，但如果传过来了也没关系，只会根据表编码修改
 	log.Println("mx111-----", mx)
 	mxcx := &moxings.Ziduan7s{
-		Biaobianma : mx.Biaobianma,
+		Biaobianma: mx.Biaobianma,
 	}
 	find := quanju.Db().Find(&moxings.Ziduan7s{}, mxcx)
 	if find.Error != nil {
