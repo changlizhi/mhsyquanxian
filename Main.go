@@ -7,6 +7,8 @@ import (
 	"os"
 	"mhsyquanxian/ziduan7skus"
 	"mhsyquanxian/moxings"
+	"time"
+	"mhsyquanxian/gongjus"
 )
 
 type Retstruct struct {
@@ -21,16 +23,15 @@ func Cors() gin.HandlerFunc {
 	}
 }
 func main() {
-
 	gin.DisableConsoleColor()
-	f, _ := os.Create("gin.log")
+	f, _ := os.Create("gin" + gongjus.Time2string(time.Now(), gongjus.NYRSFMXHX) + ".log")
 	gin.DefaultWriter = io.MultiWriter(f)
 	r := gin.Default()
 	r.Use(Cors())
 	ziduan7s := r.Group("ziduan7s")
 	{
 		ziduan7s.GET("/:Biaobianma", func(c *gin.Context) {
-			//获取到数据之后第一步，log下来
+			//获取到数据之后第一步，log下来gin自动做了
 			//第二步验证授权
 			//第三步验证字段是否合法
 			//第四步拼接参数
@@ -43,6 +44,7 @@ func main() {
 			}
 			ret := ziduan7skus.ChaxunZiduan7s(mx)
 			c.JSON(http.StatusOK, ret)
+			return
 		})
 	}
 	r.Run(":8787")
