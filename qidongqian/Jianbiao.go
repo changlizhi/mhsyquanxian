@@ -1,9 +1,9 @@
 package qidongqian
 
 import (
+	"log"
 	"mhsyquanxian/moxings"
 	"mhsyquanxian/quanju"
-	"log"
 )
 
 func Chuangjianbiao() {
@@ -27,7 +27,7 @@ func Chuangjianbiao() {
 		&moxings.Ziduan7s{},
 		&moxings.Ziyuan6s{},
 	)
-	if dbs.Error != nil{
-		log.Println("Chuangjianbiao---dbs.Error---",dbs.Error)
+	if dbs.Error != nil {
+		log.Println("Chuangjianbiao---dbs.Error---", dbs.Error)
 	}
 }
