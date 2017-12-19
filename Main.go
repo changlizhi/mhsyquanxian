@@ -46,6 +46,14 @@ func main() {
 			c.JSON(http.StatusOK, ret)
 			return
 		})
+		ziduan7s.POST("/liebiao/:Tiaojian", func(c *gin.Context) {
+			tj := c.Param("Tiaojian")
+			if tj == "quanbu"{
+				ret := ziduan7skus.SuoyouZiduan7s()
+				c.JSON(http.StatusOK, ret)
+				return
+			}
+		})
 	}
 	r.Run(":8787")
 }
