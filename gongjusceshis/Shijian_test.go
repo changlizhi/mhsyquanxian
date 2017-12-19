@@ -1,10 +1,10 @@
 package gongjus
 
 import (
-	"time"
-	"testing"
-	"mhsyquanxian/gongjus"
 	"log"
+	"mhsyquanxian/gongjus"
+	"testing"
+	"time"
 )
 
 //func String2Float64(str string) float64 {
@@ -26,8 +26,9 @@ import (
 
 func TestTime2string(t *testing.T) {
 	ret := gongjus.Time2string(time.Now(), gongjus.NYRSFMXHX)
-	log.Println("ret-----",ret)
+	log.Println("ret-----", ret)
 }
+
 //
 ////str必须为 yyyy-MM-dd
 //func String2timenyr(str string) time.Time {
