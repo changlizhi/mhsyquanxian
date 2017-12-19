@@ -56,7 +56,9 @@ func NewIdWorker() (*IdWorker, error) {
 	idWorker.sequence = 0
 	idWorker.twepoch = twepoch
 	idWorker.mutex = sync.Mutex{}
-	fmt.Sprintf("worker starting. timestamp left shift %d, District id bits %d, worker id bits %d, sequence bits %d, workerid %d", timestampLeftShift, DistrictIdBits, NodeIdBits, sequenceBits, NodeId)
+	fmt.Sprintf(
+		"worker starting. timestamp left shift %d, District id bits %d, worker id bits %d, sequence bits %d, workerid %d",
+		timestampLeftShift, DistrictIdBits, NodeIdBits, sequenceBits, NodeId)
 	return idWorker, nil
 }
 
@@ -100,7 +102,9 @@ func (id *IdWorker) nextid() (int64, error) {
 	timestamp := timeGen()
 	if timestamp < id.lastTimestamp {
 		//    fmt.Sprintf("clock is moving backwards.  Rejecting requests until %d.", id.lastTimestamp)
-		return 0, errors.New(fmt.Sprintf("Clock moved backwards.  Refusing to generate id for %d milliseconds", id.lastTimestamp-timestamp))
+		return 0, errors.New(
+			fmt.Sprintf("Clock moved backwards.  Refusing to generate id for %d milliseconds",
+				id.lastTimestamp-timestamp))
 	}
 	if id.lastTimestamp == timestamp {
 		id.sequence = (id.sequence + 1) & sequenceMask
@@ -111,5 +115,7 @@ func (id *IdWorker) nextid() (int64, error) {
 		id.sequence = 0
 	}
 	id.lastTimestamp = timestamp
-	return ((timestamp - id.twepoch) << timestampLeftShift) | (id.districtId << DistrictIdShift) | (id.nodeId << nodeIdShift) | id.sequence, nil
+	return ((timestamp - id.twepoch) << timestampLeftShift) |
+		(id.districtId << DistrictIdShift) |
+		(id.nodeId << nodeIdShift) | id.sequence, nil
 }
